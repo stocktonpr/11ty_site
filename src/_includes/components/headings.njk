@@ -1,0 +1,12 @@
+{% macro pageHeading(subtitle, title) %}
+  <div>
+    <h2 class="text-sm uppercase text-blue-600 font-['Montserrat']">{{ subtitle }}</h2>
+    <h1 class="mt-2 text-5xl font-bold text-gray-900 font-['Montserrat']">
+      {{ title }}
+    </h1>
+  </div>
+{% endmacro %}
+
+{% macro sectionHeading(title) %}
+  <h3 class="text-2xl font-semibold text-gray-900 mb-3 font-['Montserrat']">{{ title }}</h3>
+{% endmacro %} 

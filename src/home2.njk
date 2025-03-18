@@ -1,0 +1,54 @@
+---
+layout: base
+title: Beachfront - Thorntonloch
+---
+{% from "components/headings.njk" import pageHeading, sectionHeading %}
+
+<div class="max-w-6xl mx-auto px-4 py-12">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="space-y-8">
+      {{ pageHeading(
+        subtitle = "Beachfront",
+        title = "Experience Unmatched Beach Access at Thorntonloch"
+      ) }}
+
+      <p class="text-xl text-gray-600">
+        At Thorntonloch Caravan Park, enjoy direct access to the stunning beach. Create unforgettable memories with your family while soaking up the sun and sea.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          {{ sectionHeading(title = "Seaside Escape") }}
+          <p class="text-gray-600">Relax and unwind just steps away from the sandy shores.</p>
+        </div>
+        <div>
+          {{ sectionHeading(title = "Adventure Awaits") }}
+          <p class="text-gray-600">Explore the coastline and enjoy a variety of outdoor activities.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <a href="#" class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+          Learn More
+        </a>
+        <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+          Sign Up <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="relative h-[600px] rounded-lg overflow-hidden">
+      <img 
+        src="/images/beach_family.jpg" 
+        alt="Beautiful beach landscape" 
+        class="w-full h-full object-cover"
+      >
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <!-- Additional content can be added here -->
+  </div>
+</div> 

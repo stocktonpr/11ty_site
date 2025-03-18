@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="min-h-screen bg-gray-100 font-['Open_Sans']">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-8">
+        <div class="flex justify-between items-center h-36">
+          <div class="flex items-center">
+            <a href="/" class="flex items-center py-2">
+              <img src="/images/tcp.png" alt="TCP Logo" class="h-44 py-6">
+            </a>
+          </div>
+          
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-50 transition duration-150 font-['Montserrat']">Home</a>
+            <a href="/news" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-50 transition duration-150 font-['Montserrat']">News</a>
+            <a href="/about" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-50 transition duration-150 font-['Montserrat']">About</a>
+            <a href="/contact" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-50 transition duration-150 font-['Montserrat']">Contact</a>
+            <a href="/members" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-50 transition duration-150 font-['Montserrat']">Members</a>
+            <a href="/book" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-150 font-['Montserrat']">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      {{ content | safe }}
+    </main>
+    <footer class="bg-white shadow-lg mt-8">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-center text-gray-600">
+        &copy; 2024 My Site. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
