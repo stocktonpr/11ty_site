@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="min-h-screen bg-gray-100 font-['Open_Sans']">
+    {% include "partials/navigation/main-nav.njk" %}
+    
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      {{ content | safe }}
+    </main>
+
+    {% include "partials/navigation/footer.njk" %}
+  </body>
+</html>

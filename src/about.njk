@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: layouts/base
 title: About Us
 ---
 
@@ -49,4 +49,21 @@ title: About Us
       </ul>
     </div>
   </div>
+</div>
+
+{% from "components/feature-card.njk" import featureCard %}
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {{ featureCard(
+    "Luxury Accommodations",
+    "Experience comfort and elegance in our well-appointed rooms and suites."
+  ) }}
+  {{ featureCard(
+    "Fine Dining",
+    "Savor exquisite cuisine prepared by our world-class chefs."
+  ) }}
+  {{ featureCard(
+    "Beachfront Access",
+    "Direct access to pristine beaches and water activities."
+  ) }}
 </div> 
